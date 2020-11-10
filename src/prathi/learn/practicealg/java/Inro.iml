@@ -1,0 +1,63 @@
+1. Java is platform independent.
+    - Write once and run anywhere.
+    - Java program written - compiles into bytecode, can run on any JVM
+    - Different OS have JVM custom designed for them and they can run bytecide.
+
+2. JDK (Java development kit) & JRE (Java runtime environment)
+    - JRE include JVM, Java Plugins and standard java API (core class and supporting files). They dont have the power to compile an application.
+    - JDK is JRE plus Java compiler and includes dev tools. With only JRE we cannot compile .java to .class files
+
+ 3. What is JVM?
+    - JVM is an implementation of specifcation which will be able to run code irrespecive of the language
+    - Source code written in .java files are compiled to .class files (by javac compiler) whiich is the machine language. Java launcher toold then can run application with an instance of JVM.
+    - Main components of JVM are
+    a. Class loading system - identifies and loads correct classes. Takes care of allocating and iinitializing memory for class variables.
+    b. Runtime data area - Memory regions allocated by JVM( heap, stack, registers, native stack)
+    c. execution engine - takes care of execution of byte code. has three components - (interpreter, Just-in-time compiler and garbage collector)
+    - each application runs on its own JVM instance
+
+       a. Java interpreter - part of JVM and converts byte code into machine code line by line.
+       b. JIT compiler - helps improve the performance of java program by compiiling bytecodes iinto native machine code at run time.Identiifies which method needs optiimization.
+       c.
+
+ 4.Java class Library
+    - dynamically loadable libs that apps can call at runtime. includes classes from java.lang.String, java.lang.Thread, java.util.ArrayList and other class from Java API.
+    - All these are stored in single jar file(.rt.jar & classes.jar in mac). From java9 rt.jar file is broken down into smaller modules.
+
+  5. .hrpof file
+     - profiles CPU and heap usage wiithin a JVM
+
+  6. Java tools
+     - java: launch java app
+     - javac: compiles .java files to byte code .class files
+     - javadoc: parsed docs, declaratiions and comments as a set of HTML pages describing  classes, interface, method, constructor
+     - javap: dissambles one mor more class files (view public orotected and priivatte memebers of a class)
+     - JDPA: debug java code
+     - jconsole: graphical montiorol tool for JVM
+     - jcmd: used to get heap dumps, stack traces, stats etc
+     - jmap: to get stats about memory on a running Jvm
+     - jstack: stacktraces
+     - jstat: monitor JVM stats
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
